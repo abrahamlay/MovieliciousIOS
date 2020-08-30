@@ -8,46 +8,42 @@
 
 import Foundation
 import SwiftUI
+import struct Kingfisher.KFImage
 
-struct CellComponent :View{
-    
-    var imageContent: String
-    var profileContent: String
+struct CellComponent : View{
+    var thumbnailId: String
     var title: String
-    var desc: String
-    var duration: String
-    var statistics: String
+    var dateRelease: String
     var body: some View{
         VStack{
             ZStack(alignment: .bottomLeading){
-                Image(imageContent)
+                KFImage(URL(string: "https://image.tmdb.org/t/p/w500/\(thumbnailId)"))
                     .resizable()
-                    .frame(height: 240)
+                    .frame(height: 200)
                 HStack(spacing: 20){
                     VStack (alignment: .leading){
                         Text(title)
+                            .foregroundColor(Color.white)
                             .font(.headline)
-                        Text(desc)
-                            .font(.caption)
-                        Text(statistics)
+                        Text(dateFormaterUtils(dateString: dateRelease))
+                            .foregroundColor(Color.white)
                             .font(.caption)
                     }.padding(10)
                     Spacer()
-                }.background(Color.gray)
+                }.background(Color.gray.opacity(0.5))
             }
-        }
+        }.cornerRadius(10)
     }
 }
 
 struct CellComponent_Previews: PreviewProvider {
     static var previews: some View {
         List{
+            CellComponent(thumbnailId: "content1",title: "Tutorial Beginner Android #1",dateRelease: "2020-08-20")
             
-            CellComponent(imageContent: "content1", profileContent: "profile", title: "Tutorial Beginner Android #1", desc: "Menjadi Android Developer itu mudah...", duration: "10:50", statistics: "300x ditonton - 9 jam yang lalu")
+            CellComponent(thumbnailId: "content2", title: "Tutorial Beginner Android #2",dateRelease: "2020-08-20")
             
-            CellComponent(imageContent: "content2", profileContent: "profile", title: "Tutorial Beginner Android #2", desc: "Menjadi Android Developer itu mudah...", duration: "10:50", statistics: "300x ditonton - 9 jam yang lalu")
-            
-            CellComponent(imageContent: "content3", profileContent: "profile", title: "Tutorial Beginner Android #3", desc: "Menjadi Android Developer itu mudah...", duration: "10:50", statistics: "300x ditonton - 9 jam yang lalu")
+            CellComponent(thumbnailId: "content3", title: "Tutorial Beginner Android #3", dateRelease: "2020-08-20")
         }
     }
 }

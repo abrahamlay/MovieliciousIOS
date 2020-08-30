@@ -7,10 +7,7 @@ target 'Movielicious' do
 
   # Pods for Movielicious
   pod 'Alamofire', '~> 5.2.1'
-  pod 'Kingfisher', '~> 5.14.1'
-  pod 'SwiftyJSON', '~> 4.0'
+  pod 'Kingfisher/SwiftUI', '~> 5.14.1'
   pod 'Moya/RxSwift', '~> 14.0'
-  pod 'RxSwift', '~> 5'
-  pod 'RxCocoa', '~> 5'
 
 end

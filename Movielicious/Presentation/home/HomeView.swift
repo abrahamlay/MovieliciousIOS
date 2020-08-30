@@ -43,8 +43,6 @@ struct HomeView: View {
                         },
                         trailing:
                         HStack(spacing:20){
-                               
-                            
                                 Button(action: {print("Do Search...")}){
                                     Image(systemName: "magnifyingglass").foregroundColor(Color.secondary)
                                 }
@@ -59,14 +57,25 @@ struct HomeView: View {
 
     
     struct HomeContent : View {
+        init() {
+            if #available(iOS 14.0, *) {
+                // iOS 14 doesn't have extra separators below the list by default.
+            } else {
+                // To remove only extra separators below the list:
+                UITableView.appearance().tableFooterView = UIView()
+            }
+
+            // To remove all separators including the actual ones:
+            UITableView.appearance().separatorStyle = .none
+        }
+        
+        @ObservedObject var repository = MovieRepositoryImpl()
+        
         var body: some View{
-            List{
-                
-                CellComponent(imageContent: "content1", profileContent: "profile", title: "Tutorial Beginner Android #1", desc: "Menjadi Android Developer itu mudah...", duration: "10:50", statistics: "300x ditonton - 9 jam yang lalu")
-                
-                CellComponent(imageContent: "content2", profileContent: "profile", title: "Tutorial Beginner Android #2", desc: "Menjadi Android Developer itu mudah...", duration: "10:50", statistics: "300x ditonton - 9 jam yang lalu")
-                
-                CellComponent(imageContent: "content3", profileContent: "profile", title: "Tutorial Beginner Android #3", desc: "Menjadi Android Developer itu mudah...", duration: "10:50", statistics: "300x ditonton - 9 jam yang lalu")
+            List(repository.movieList.results, id: \.self){ movie in
+                CellComponent(thumbnailId: movie.backdropPath ?? "", title: movie.title ?? "",dateRelease: movie.releaseDate ?? "")
+            }.onAppear(){
+                self.repository.getPopular()
             }
         }
     }
