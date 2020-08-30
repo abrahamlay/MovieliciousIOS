@@ -14,6 +14,7 @@
 		38AE56E924BB049300869DB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38AE56E824BB049300869DB8 /* Assets.xcassets */; };
 		38AE56EC24BB049300869DB8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38AE56EA24BB049300869DB8 /* LaunchScreen.storyboard */; };
 		38FD0A9D24FB940400E957FF /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FD0A9C24FB940400E957FF /* HomeView.swift */; };
+		38FD0A9F24FB9B1800E957FF /* CellComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FD0A9E24FB9B1800E957FF /* CellComponent.swift */; };
 		E9295029E7027FA5EC3791F4 /* Pods_Movielicious.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A03E5132F68D791DC83EF5D3 /* Pods_Movielicious.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +28,7 @@
 		38AE56EB24BB049300869DB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		38AE56ED24BB049300869DB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		38FD0A9C24FB940400E957FF /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		38FD0A9E24FB9B1800E957FF /* CellComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellComponent.swift; sourceTree = "<group>"; };
 		44A136E02DB05CB988A61FC3 /* Pods-Movielicious.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Movielicious.debug.xcconfig"; path = "Target Support Files/Pods-Movielicious/Pods-Movielicious.debug.xcconfig"; sourceTree = "<group>"; };
 		A03E5132F68D791DC83EF5D3 /* Pods_Movielicious.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Movielicious.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E91184CC0CA4BF5864A2076F /* Pods-Movielicious.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Movielicious.release.xcconfig"; path = "Target Support Files/Pods-Movielicious/Pods-Movielicious.release.xcconfig"; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 				38AE56E124BB049100869DB8 /* SceneDelegate.swift */,
 				38AE56E324BB049100869DB8 /* ViewController.swift */,
 				38FD0A9C24FB940400E957FF /* HomeView.swift */,
+				38FD0A9E24FB9B1800E957FF /* CellComponent.swift */,
 			);
 			path = home;
 			sourceTree = "<group>";
@@ -237,6 +240,7 @@
 				38AE56E024BB049100869DB8 /* AppDelegate.swift in Sources */,
 				38FD0A9D24FB940400E957FF /* HomeView.swift in Sources */,
 				38AE56E224BB049100869DB8 /* SceneDelegate.swift in Sources */,
+				38FD0A9F24FB9B1800E957FF /* CellComponent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

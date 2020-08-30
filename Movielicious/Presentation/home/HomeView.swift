@@ -60,7 +60,14 @@ struct HomeView: View {
     
     struct HomeContent : View {
         var body: some View{
-            Text("Home")
+            List{
+                
+                CellComponent(imageContent: "content1", profileContent: "profile", title: "Tutorial Beginner Android #1", desc: "Menjadi Android Developer itu mudah...", duration: "10:50", statistics: "300x ditonton - 9 jam yang lalu")
+                
+                CellComponent(imageContent: "content2", profileContent: "profile", title: "Tutorial Beginner Android #2", desc: "Menjadi Android Developer itu mudah...", duration: "10:50", statistics: "300x ditonton - 9 jam yang lalu")
+                
+                CellComponent(imageContent: "content3", profileContent: "profile", title: "Tutorial Beginner Android #3", desc: "Menjadi Android Developer itu mudah...", duration: "10:50", statistics: "300x ditonton - 9 jam yang lalu")
+            }
         }
     }
     
