@@ -39,11 +39,11 @@ struct CellComponent : View{
 struct CellComponent_Previews: PreviewProvider {
     static var previews: some View {
         List{
-            CellComponent(thumbnailId: "content1",title: "Tutorial Beginner Android #1",dateRelease: "2020-08-20")
+            CellComponent(thumbnailId: "/lP5eKh8WOcPysfELrUpGhHJGZEH.jpg",title: "Bloodshot",dateRelease: "2020-08-20")
             
-            CellComponent(thumbnailId: "content2", title: "Tutorial Beginner Android #2",dateRelease: "2020-08-20")
+            CellComponent(thumbnailId: "/6ELJEzQJ3Y45HczvreC3dg0GV5R.jpg", title: "Black Panther",dateRelease: "2020-08-20")
             
-            CellComponent(thumbnailId: "content3", title: "Tutorial Beginner Android #3", dateRelease: "2020-08-20")
+            CellComponent(thumbnailId: "/orjiB3oUIsyz60hoEqkiGpy5CeO.jpg", title: "Avengers: Endgame", dateRelease: "2020-08-20")
         }
     }
 }

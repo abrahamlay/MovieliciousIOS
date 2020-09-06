@@ -30,10 +30,12 @@ struct HomeView: View {
     
 
     struct Home : View {
+        
+        @State var showSearchBar = false
+        
         var body: some View{
             NavigationView{
-                    HomeContent()
-                
+                HomeContent(showSearchBar: $showSearchBar)
                     .navigationBarItems(
                         leading:
                         HStack{
@@ -43,7 +45,9 @@ struct HomeView: View {
                         },
                         trailing:
                         HStack(spacing:20){
-                                Button(action: {print("Do Search...")}){
+                                Button(action: {
+                                    self.showSearchBar.toggle()
+                                }){
                                     Image(systemName: "magnifyingglass").foregroundColor(Color.secondary)
                                 }
                         
@@ -57,25 +61,47 @@ struct HomeView: View {
 
     
     struct HomeContent : View {
-        init() {
-            if #available(iOS 14.0, *) {
-                // iOS 14 doesn't have extra separators below the list by default.
-            } else {
-                // To remove only extra separators below the list:
-                UITableView.appearance().tableFooterView = UIView()
-            }
-
-            // To remove all separators including the actual ones:
-            UITableView.appearance().separatorStyle = .none
-        }
-        
+        @Binding var showSearchBar: Bool
         @ObservedObject var repository = MovieRepositoryImpl()
+        @State private var searchText : String = ""
         
+        init(showSearchBar: Binding<Bool>) {
+            if #available(iOS 14.0, *) {
+               // iOS 14 doesn't have extra separators below the list by default.
+           } else {
+               // To remove only extra separators below the list:
+               UITableView.appearance().tableFooterView = UIView()
+           }
+
+           // To remove all separators including the actual ones:
+           UITableView.appearance().separatorStyle = .none
+            self._showSearchBar = showSearchBar
+        }
         var body: some View{
-            List(repository.movieList.results, id: \.self){ movie in
-                CellComponent(thumbnailId: movie.backdropPath ?? "", title: movie.title ?? "",dateRelease: movie.releaseDate ?? "")
-            }.onAppear(){
-                self.repository.getPopular()
+        
+            VStack{
+                    if self.showSearchBar{
+                        SearchBar(text: self.$searchText)
+                    }
+//                    GeometryReader{ geometry in
+//                        CustomScrollView(width:
+//                            geometry.size.width, height:
+//                            geometry.size.height , handlePullToRefresh: {
+//                            self.repository.getPopular()
+//                        }) {
+                            List(self.repository.movieList.results.filter{movie in
+                                self.searchText.isEmpty ? true : movie.title?.contains(self.searchText) ?? true
+                                
+                            }, id: \.self){ movie in
+                                    ZStack{
+                                        CellComponent(thumbnailId: movie.backdropPath ?? "", title: movie.title ?? "",dateRelease: movie.releaseDate ?? "")
+                                        NavigationLink(destination: DetailMovieView(movie: movie)){
+                                                EmptyView()
+                                        }.navigationBarTitle(Text("Popular"), displayMode: .inline)
+                                    }
+//                            }
+//                        }
+                }
             }
         }
     }

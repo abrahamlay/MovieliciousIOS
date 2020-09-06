@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		382EF1E42504CE920031BFCA /* CustomSwipeRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382EF1E32504CE920031BFCA /* CustomSwipeRefresh.swift */; };
 		38AE56E024BB049100869DB8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38AE56DF24BB049100869DB8 /* AppDelegate.swift */; };
 		38AE56E224BB049100869DB8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38AE56E124BB049100869DB8 /* SceneDelegate.swift */; };
 		38AE56E424BB049100869DB8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38AE56E324BB049100869DB8 /* ViewController.swift */; };
 		38AE56E724BB049100869DB8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38AE56E524BB049100869DB8 /* Main.storyboard */; };
 		38AE56E924BB049300869DB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38AE56E824BB049300869DB8 /* Assets.xcassets */; };
 		38AE56EC24BB049300869DB8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38AE56EA24BB049300869DB8 /* LaunchScreen.storyboard */; };
+		38DC336E24FCCB530066D113 /* DetailMovieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38DC336D24FCCB530066D113 /* DetailMovieView.swift */; };
 		38FD0A9D24FB940400E957FF /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FD0A9C24FB940400E957FF /* HomeView.swift */; };
 		38FD0A9F24FB9B1800E957FF /* CellComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FD0A9E24FB9B1800E957FF /* CellComponent.swift */; };
 		38FD0AA424FBCDEA00E957FF /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FD0AA324FBCDEA00E957FF /* Movie.swift */; };
@@ -21,11 +23,12 @@
 		38FD0AAD24FBEE3E00E957FF /* Popular.json in Resources */ = {isa = PBXBuildFile; fileRef = 38FD0AAC24FBEE3E00E957FF /* Popular.json */; };
 		38FD0AB024FBF06000E957FF /* MovieRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FD0AAF24FBF06000E957FF /* MovieRepository.swift */; };
 		38FD0AB324FC067C00E957FF /* DateUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FD0AB224FC067C00E957FF /* DateUtils.swift */; };
-		38FD0AB624FC0C7C00E957FF /* LegacyScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FD0AB524FC0C7C00E957FF /* LegacyScrollView.swift */; };
+		38FD0AB824FC9C5300E957FF /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FD0AB724FC9C5300E957FF /* SearchBar.swift */; };
 		E9295029E7027FA5EC3791F4 /* Pods_Movielicious.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A03E5132F68D791DC83EF5D3 /* Pods_Movielicious.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		382EF1E32504CE920031BFCA /* CustomSwipeRefresh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSwipeRefresh.swift; sourceTree = "<group>"; };
 		38AE56DC24BB049100869DB8 /* Movielicious.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Movielicious.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		38AE56DF24BB049100869DB8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		38AE56E124BB049100869DB8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -34,6 +37,7 @@
 		38AE56E824BB049300869DB8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		38AE56EB24BB049300869DB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		38AE56ED24BB049300869DB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		38DC336D24FCCB530066D113 /* DetailMovieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailMovieView.swift; sourceTree = "<group>"; };
 		38FD0A9C24FB940400E957FF /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		38FD0A9E24FB9B1800E957FF /* CellComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellComponent.swift; sourceTree = "<group>"; };
 		38FD0AA324FBCDEA00E957FF /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
@@ -42,7 +46,7 @@
 		38FD0AAC24FBEE3E00E957FF /* Popular.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Popular.json; path = ../../../../../../../../../../Desktop/Popular.json; sourceTree = "<group>"; };
 		38FD0AAF24FBF06000E957FF /* MovieRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieRepository.swift; sourceTree = "<group>"; };
 		38FD0AB224FC067C00E957FF /* DateUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateUtils.swift; sourceTree = "<group>"; };
-		38FD0AB524FC0C7C00E957FF /* LegacyScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegacyScrollView.swift; sourceTree = "<group>"; };
+		38FD0AB724FC9C5300E957FF /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		44A136E02DB05CB988A61FC3 /* Pods-Movielicious.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Movielicious.debug.xcconfig"; path = "Target Support Files/Pods-Movielicious/Pods-Movielicious.debug.xcconfig"; sourceTree = "<group>"; };
 		A03E5132F68D791DC83EF5D3 /* Pods_Movielicious.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Movielicious.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E91184CC0CA4BF5864A2076F /* Pods-Movielicious.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Movielicious.release.xcconfig"; path = "Target Support Files/Pods-Movielicious/Pods-Movielicious.release.xcconfig"; sourceTree = "<group>"; };
@@ -94,9 +98,18 @@
 			path = Movielicious;
 			sourceTree = "<group>";
 		};
+		38DC336C24FCCB3B0066D113 /* detail */ = {
+			isa = PBXGroup;
+			children = (
+				38DC336D24FCCB530066D113 /* DetailMovieView.swift */,
+			);
+			path = detail;
+			sourceTree = "<group>";
+		};
 		38FD0A9924FB92B200E957FF /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				38DC336C24FCCB3B0066D113 /* detail */,
 				38FD0A9B24FB92EA00E957FF /* home */,
 			);
 			path = Presentation;
@@ -176,7 +189,8 @@
 		38FD0AB424FC0C5D00E957FF /* widgets */ = {
 			isa = PBXGroup;
 			children = (
-				38FD0AB524FC0C7C00E957FF /* LegacyScrollView.swift */,
+				38FD0AB724FC9C5300E957FF /* SearchBar.swift */,
+				382EF1E32504CE920031BFCA /* CustomSwipeRefresh.swift */,
 			);
 			path = widgets;
 			sourceTree = "<group>";
@@ -318,13 +332,15 @@
 				38AE56E024BB049100869DB8 /* AppDelegate.swift in Sources */,
 				38FD0AB024FBF06000E957FF /* MovieRepository.swift in Sources */,
 				38FD0AB324FC067C00E957FF /* DateUtils.swift in Sources */,
+				38DC336E24FCCB530066D113 /* DetailMovieView.swift in Sources */,
 				38FD0AA424FBCDEA00E957FF /* Movie.swift in Sources */,
 				38FD0A9D24FB940400E957FF /* HomeView.swift in Sources */,
 				38FD0AAA24FBD4FB00E957FF /* NetworkManager.swift in Sources */,
 				38AE56E224BB049100869DB8 /* SceneDelegate.swift in Sources */,
 				38FD0A9F24FB9B1800E957FF /* CellComponent.swift in Sources */,
+				38FD0AB824FC9C5300E957FF /* SearchBar.swift in Sources */,
 				38FD0AA824FBD38B00E957FF /* MovieApi.swift in Sources */,
-				38FD0AB624FC0C7C00E957FF /* LegacyScrollView.swift in Sources */,
+				382EF1E42504CE920031BFCA /* CustomSwipeRefresh.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

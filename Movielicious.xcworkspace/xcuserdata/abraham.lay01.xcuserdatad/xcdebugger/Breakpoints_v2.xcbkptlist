@@ -226,5 +226,164 @@
             landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5E7387C5-CA16-4E44-A527-5D7507CAD330"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Movielicious/Presentation/home/HomeView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "92"
+            endingLineNumber = "92"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "5E7387C5-CA16-4E44-A527-5D7507CAD330 - dad08be2013ba44"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.TupleView&lt;(Swift.Optional&lt;Movielicious.SearchBar&gt;, &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.onAppear(perform: Swift.Optional&lt;() -&gt; ()&gt;) -&gt; some&gt;&gt;.0)&gt; in Movielicious.HomeView.HomeContent.body.getter : some"
+                  moduleName = "Movielicious"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/abraham.lay01/Library/Mobile%20Documents/com~apple~CloudDocs/Desktop/IOS%20Course%20Project/Movielicious/Movielicious/Presentation/home/HomeView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "92"
+                  endingLineNumber = "92"
+                  offsetFromSymbolStart = "1650">
+               </Location>
+               <Location
+                  uuid = "5E7387C5-CA16-4E44-A527-5D7507CAD330 - a556938028b1b2d9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Movielicious.Movie) -&gt; Swift.Bool in closure #1 () -&gt; SwiftUI.TupleView&lt;(Swift.Optional&lt;Movielicious.SearchBar&gt;, &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.onAppear(perform: Swift.Optional&lt;() -&gt; ()&gt;) -&gt; some&gt;&gt;.0)&gt; in Movielicious.HomeView.HomeContent.body.getter : some"
+                  moduleName = "Movielicious"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/abraham.lay01/Library/Mobile%20Documents/com~apple~CloudDocs/Desktop/IOS%20Course%20Project/Movielicious/Movielicious/Presentation/home/HomeView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "92"
+                  endingLineNumber = "92"
+                  offsetFromSymbolStart = "927">
+               </Location>
+               <Location
+                  uuid = "5E7387C5-CA16-4E44-A527-5D7507CAD330 - 8f52e07e0db19c8d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Movielicious.Movie) -&gt; SwiftUI.ZStack&lt;SwiftUI.TupleView&lt;(Movielicious.CellComponent, &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.navigationBarTitle(_: SwiftUI.Text, displayMode: SwiftUI.NavigationBarItem.TitleDisplayMode) -&gt; some&gt;&gt;.0)&gt;&gt; in closure #1 () -&gt; SwiftUI.TupleView&lt;(Swift.Optional&lt;Movielicious.SearchBar&gt;, &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.onAppear(perform: Swift.Optional&lt;() -&gt; ()&gt;) -&gt; some&gt;&gt;.0)&gt; in Movielicious.HomeView.HomeContent.body.getter : some"
+                  moduleName = "Movielicious"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/abraham.lay01/Library/Mobile%20Documents/com~apple~CloudDocs/Desktop/IOS%20Course%20Project/Movielicious/Movielicious/Presentation/home/HomeView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "93"
+                  endingLineNumber = "93"
+                  offsetFromSymbolStart = "499">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0E8CEED6-EB65-4865-9127-68959ACEE2E6"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Movielicious/Presentation/home/HomeView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "93"
+            endingLineNumber = "93"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "0E8CEED6-EB65-4865-9127-68959ACEE2E6 - 8f52e07e0db19c8d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Movielicious.Movie) -&gt; SwiftUI.ZStack&lt;SwiftUI.TupleView&lt;(Movielicious.CellComponent, &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.navigationBarTitle(_: SwiftUI.Text, displayMode: SwiftUI.NavigationBarItem.TitleDisplayMode) -&gt; some&gt;&gt;.0)&gt;&gt; in closure #1 () -&gt; SwiftUI.TupleView&lt;(Swift.Optional&lt;Movielicious.SearchBar&gt;, &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.onAppear(perform: Swift.Optional&lt;() -&gt; ()&gt;) -&gt; some&gt;&gt;.0)&gt; in Movielicious.HomeView.HomeContent.body.getter : some"
+                  moduleName = "Movielicious"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/abraham.lay01/Library/Mobile%20Documents/com~apple~CloudDocs/Desktop/IOS%20Course%20Project/Movielicious/Movielicious/Presentation/home/HomeView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "93"
+                  endingLineNumber = "93"
+                  offsetFromSymbolStart = "499">
+               </Location>
+               <Location
+                  uuid = "0E8CEED6-EB65-4865-9127-68959ACEE2E6 - d2dc842eb810045f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.TupleView&lt;(Movielicious.CellComponent, &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.navigationBarTitle(_: SwiftUI.Text, displayMode: SwiftUI.NavigationBarItem.TitleDisplayMode) -&gt; some&gt;&gt;.0)&gt; in closure #2 (Movielicious.Movie) -&gt; SwiftUI.ZStack&lt;SwiftUI.TupleView&lt;(Movielicious.CellComponent, &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.navigationBarTitle(_: SwiftUI.Text, displayMode: SwiftUI.NavigationBarItem.TitleDisplayMode) -&gt; some&gt;&gt;.0)&gt;&gt; in closure #1 () -&gt; SwiftUI.TupleView&lt;(Swift.Optional&lt;Movielicious.SearchBar&gt;, &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.onAppear(perform: Swift.Optional&lt;() -&gt; ()&gt;) -&gt; some&gt;&gt;.0)&gt; in Movielicious.HomeView.HomeContent.body.getter : some"
+                  moduleName = "Movielicious"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/abraham.lay01/Library/Mobile%20Documents/com~apple~CloudDocs/Desktop/IOS%20Course%20Project/Movielicious/Movielicious/Presentation/home/HomeView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "94"
+                  endingLineNumber = "94"
+                  offsetFromSymbolStart = "227">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C326E141-AA48-4B15-8E04-5E43DA2D37B4"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Movielicious/Presentation/home/HomeView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "97"
+            endingLineNumber = "97"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "C326E141-AA48-4B15-8E04-5E43DA2D37B4 - d2dc842eb810045f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.TupleView&lt;(Movielicious.CellComponent, &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.navigationBarTitle(_: SwiftUI.Text, displayMode: SwiftUI.NavigationBarItem.TitleDisplayMode) -&gt; some&gt;&gt;.0)&gt; in closure #2 (Movielicious.Movie) -&gt; SwiftUI.ZStack&lt;SwiftUI.TupleView&lt;(Movielicious.CellComponent, &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.navigationBarTitle(_: SwiftUI.Text, displayMode: SwiftUI.NavigationBarItem.TitleDisplayMode) -&gt; some&gt;&gt;.0)&gt;&gt; in closure #1 () -&gt; SwiftUI.TupleView&lt;(Swift.Optional&lt;Movielicious.SearchBar&gt;, &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.onAppear(perform: Swift.Optional&lt;() -&gt; ()&gt;) -&gt; some&gt;&gt;.0)&gt; in Movielicious.HomeView.HomeContent.body.getter : some"
+                  moduleName = "Movielicious"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/abraham.lay01/Library/Mobile%20Documents/com~apple~CloudDocs/Desktop/IOS%20Course%20Project/Movielicious/Movielicious/Presentation/home/HomeView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "97"
+                  endingLineNumber = "97"
+                  offsetFromSymbolStart = "1178">
+               </Location>
+               <Location
+                  uuid = "C326E141-AA48-4B15-8E04-5E43DA2D37B4 - 7acf232d340f3d99"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.EmptyView in closure #1 () -&gt; SwiftUI.TupleView&lt;(Movielicious.CellComponent, &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.navigationBarTitle(_: SwiftUI.Text, displayMode: SwiftUI.NavigationBarItem.TitleDisplayMode) -&gt; some&gt;&gt;.0)&gt; in closure #2 (Movielicious.Movie) -&gt; SwiftUI.ZStack&lt;SwiftUI.TupleView&lt;(Movielicious.CellComponent, &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.navigationBarTitle(_: SwiftUI.Text, displayMode: SwiftUI.NavigationBarItem.TitleDisplayMode) -&gt; some&gt;&gt;.0)&gt;&gt; in closure #1 () -&gt; SwiftUI.TupleView&lt;(Swift.Optional&lt;Movielicious.SearchBar&gt;, &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.onAppear(perform: Swift.Optional&lt;() -&gt; ()&gt;) -&gt; some&gt;&gt;.0)&gt; in Movielicious.HomeView.HomeContent.body.getter : some"
+                  moduleName = "Movielicious"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/abraham.lay01/Library/Mobile%20Documents/com~apple~CloudDocs/Desktop/IOS%20Course%20Project/Movielicious/Movielicious/Presentation/home/HomeView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "97"
+                  endingLineNumber = "97"
+                  offsetFromSymbolStart = "9">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

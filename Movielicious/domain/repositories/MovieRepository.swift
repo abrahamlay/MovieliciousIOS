@@ -18,6 +18,9 @@ protocol MovieRepository {
 class MovieRepositoryImpl: ObservableObject ,MovieRepository {
     var provider: MoyaProvider<MovieAPI> = NetworkManager().self.provider
     
+    init() {
+        getPopular()
+    }
     
     @Published var movieList = MovieList(page: 0,totalResults: 0,totalPages: 0,results: [Movie]())
     func getPopular() {
