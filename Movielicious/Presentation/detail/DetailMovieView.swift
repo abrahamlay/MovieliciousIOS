@@ -7,17 +7,122 @@
 //
 
 import SwiftUI
+import struct Kingfisher.KFImage
 
 struct DetailMovieView: View {
+    var repository = MovieRepositoryImpl()
     var movie : Movie
     var body: some View {
-        Text(movie.title ?? /*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack(alignment: .top){
+            VStack{
+                DetailHeader(movie: movie)
+                DetailBody(movie: movie)
+            }
+        }.onAppear(){
+//            repository.getDetail(id: movie.id)
+        }
+       
     }
 }
 
+
+struct DetailHeader : View {
+    var movie : Movie
+    var body: some View{
+        VStack(alignment: .leading){
+            Banner(thumbnailId: movie.backdropPath ?? "0")
+            HStack{
+                Text(movie.title ?? "Movie Title")
+                    .padding()
+                    .font(.headline)
+            
+                Rating(rating: Int(movie.popularity))
+            }
+        }
+    }
+}
+
+
+struct Banner: View{
+    var thumbnailId: String
+    var body : some View {
+        ZStack{
+            KFImage(URL(string: "https://image.tmdb.org/t/p/w500/\(thumbnailId)"))
+                .resizable()
+                .frame(height: 200)
+        }
+    }
+}
+
+struct Rating: View {
+    var rating: Int
+    var label = ""
+
+    var maximumRating = 5
+
+    var offImage: Image?
+    var onImage = Image(systemName: "star.fill")
+
+    var offColor = Color.gray
+    var onColor = Color.yellow
+    
+    func image(for number: Int) -> Image {
+        if number > rating {
+            return offImage ?? onImage
+        } else {
+            return onImage
+        }
+    }
+    
+    var body : some View {
+        VStack {
+            if label.isEmpty == false {
+                Text(label)
+            }
+            HStack{
+                ForEach(1..<maximumRating + 1) { number in
+                    self.image(for: number)
+                        .foregroundColor(number > self.rating ? self.offColor : self.onColor)
+    //                    .onTapGesture {
+    //                        rating = number
+    //                    }.......
+                }
+            }
+        }.padding(.trailing)
+    }
+}
+
+struct DetailBody: View{
+    var movie: Movie
+    var body: some View {
+        VStack(alignment: .leading, spacing: 5) {
+            Text(movie.overview ?? "Movie Description")
+                .padding()
+                .font(.body)
+            DetailBodyInfo(value: dateFormaterUtils(dateString: movie.releaseDate ?? ""), label: "Release Date")
+        }
+    }
+}
+
+struct DetailBodyInfo: View {
+    var value = ""
+    var label = ""
+    var body: some View{
+        HStack{
+            if !value.isEmpty {
+                Text("\(label) :")
+                    .bold()
+                    .font(.callout)
+                    .padding()
+                Text(value).font(.body)
+            }
+            
+        }
+    }
+}
 struct DetailMovieView_Previews: PreviewProvider {
     static var previews: some View {
-        DetailMovieView(movie: Movie( voteCount: 100,
+        DetailMovieView(repository: MovieRepositoryImpl(), movie: Movie( voteCount: 100,
             id: 1,
             video: false,
             voteAverage: 4.5,

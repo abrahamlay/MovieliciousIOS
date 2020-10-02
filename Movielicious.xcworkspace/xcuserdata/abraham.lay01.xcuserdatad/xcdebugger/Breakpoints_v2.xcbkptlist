@@ -236,13 +236,13 @@
             filePath = "Movielicious/Presentation/home/HomeView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "92"
-            endingLineNumber = "92"
+            startingLineNumber = "85"
+            endingLineNumber = "85"
             landmarkName = "body"
             landmarkType = "24">
             <Locations>
                <Location
-                  uuid = "5E7387C5-CA16-4E44-A527-5D7507CAD330 - dad08be2013ba44"
+                  uuid = "5E7387C5-CA16-4E44-A527-5D7507CAD330 - b5525c5e387439e0"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -257,7 +257,7 @@
                   offsetFromSymbolStart = "1650">
                </Location>
                <Location
-                  uuid = "5E7387C5-CA16-4E44-A527-5D7507CAD330 - a556938028b1b2d9"
+                  uuid = "5E7387C5-CA16-4E44-A527-5D7507CAD330 - 1da9c76030d6317d"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -272,7 +272,7 @@
                   offsetFromSymbolStart = "927">
                </Location>
                <Location
-                  uuid = "5E7387C5-CA16-4E44-A527-5D7507CAD330 - 8f52e07e0db19c8d"
+                  uuid = "5E7387C5-CA16-4E44-A527-5D7507CAD330 - 37adb49e15d61f08"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -299,13 +299,13 @@
             filePath = "Movielicious/Presentation/home/HomeView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "93"
-            endingLineNumber = "93"
+            startingLineNumber = "86"
+            endingLineNumber = "86"
             landmarkName = "body"
             landmarkType = "24">
             <Locations>
                <Location
-                  uuid = "0E8CEED6-EB65-4865-9127-68959ACEE2E6 - 8f52e07e0db19c8d"
+                  uuid = "0E8CEED6-EB65-4865-9127-68959ACEE2E6 - 37adb49e15d61f08"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -320,7 +320,7 @@
                   offsetFromSymbolStart = "499">
                </Location>
                <Location
-                  uuid = "0E8CEED6-EB65-4865-9127-68959ACEE2E6 - d2dc842eb810045f"
+                  uuid = "0E8CEED6-EB65-4865-9127-68959ACEE2E6 - 6a23d0cea077863d"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -347,13 +347,13 @@
             filePath = "Movielicious/Presentation/home/HomeView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "97"
-            endingLineNumber = "97"
+            startingLineNumber = "90"
+            endingLineNumber = "90"
             landmarkName = "body"
             landmarkType = "24">
             <Locations>
                <Location
-                  uuid = "C326E141-AA48-4B15-8E04-5E43DA2D37B4 - d2dc842eb810045f"
+                  uuid = "C326E141-AA48-4B15-8E04-5E43DA2D37B4 - 6a23d0cea077865e"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -368,7 +368,7 @@
                   offsetFromSymbolStart = "1178">
                </Location>
                <Location
-                  uuid = "C326E141-AA48-4B15-8E04-5E43DA2D37B4 - 7acf232d340f3d99"
+                  uuid = "C326E141-AA48-4B15-8E04-5E43DA2D37B4 - c23077cd2c68bf98"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"

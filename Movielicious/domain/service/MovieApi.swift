@@ -11,6 +11,7 @@ import Moya
 
 enum MovieAPI {
     case popular
+    case detail(id: Int)
 }
 
 func stubbedResponses(_ filename: String) -> Data {
@@ -45,6 +46,8 @@ extension MovieAPI : TargetType {
         switch self {
         case .popular:
             return "3/movie/popular"
+        case .detail(let id):
+            return "3/movie/\(id)"
         }
     }
     
@@ -52,18 +55,24 @@ extension MovieAPI : TargetType {
         switch self {
         case .popular:
             return .get
+        case .detail:
+            return .get
         }
     }
     var sampleData: Data {
         switch self {
         case .popular:
             return stubbedResponses("Popular")
+        case .detail:
+            return stubbedResponses("Detail")
         }
     }
     
     var task: Task {
         switch self {
         case .popular:
+            return .requestParameters(parameters: ["api_key": NetworkManager.MovieAPIKey], encoding: URLEncoding.queryString)
+        case .detail:
             return .requestParameters(parameters: ["api_key": NetworkManager.MovieAPIKey], encoding: URLEncoding.queryString)
         }
         

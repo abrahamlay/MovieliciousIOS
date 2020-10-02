@@ -66,15 +66,8 @@ struct HomeView: View {
         @State private var searchText : String = ""
         
         init(showSearchBar: Binding<Bool>) {
-            if #available(iOS 14.0, *) {
-               // iOS 14 doesn't have extra separators below the list by default.
-           } else {
-               // To remove only extra separators below the list:
-               UITableView.appearance().tableFooterView = UIView()
-           }
-
            // To remove all separators including the actual ones:
-           UITableView.appearance().separatorStyle = .none
+//           UITableView.appearance().separatorStyle = .none
             self._showSearchBar = showSearchBar
         }
         var body: some View{
@@ -98,6 +91,7 @@ struct HomeView: View {
                                         NavigationLink(destination: DetailMovieView(movie: movie)){
                                                 EmptyView()
                                         }.navigationBarTitle(Text("Popular"), displayMode: .inline)
+                                    
                                     }
 //                            }
 //                        }
