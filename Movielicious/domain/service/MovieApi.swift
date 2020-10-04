@@ -22,16 +22,18 @@ func stubbedResponses(_ filename: String) -> Data {
     return (try! Data(contentsOf: URL(fileURLWithPath: path!)))
 }
 
+
+var appConfig = AppConfiguration()
+
 extension MovieAPI : TargetType {
-    
     var environmentBaseUrl: String {
         switch NetworkManager.environtment {
         case .production:
-            return "https://api.themoviedb.org/"
+            return appConfig.apiBaseUrlProd
         case .qa:
-            return "https://qa.themoviedb.org/"
+            return appConfig.apiBaseUrlQA
         case .staging:
-            return "https://staging.themoviedb.org/"
+            return appConfig.apiBaseUrlStaging
         }
     }
     
@@ -71,9 +73,9 @@ extension MovieAPI : TargetType {
     var task: Task {
         switch self {
         case .popular:
-            return .requestParameters(parameters: ["api_key": NetworkManager.MovieAPIKey], encoding: URLEncoding.queryString)
+            return .requestParameters(parameters: ["api_key": appConfig.apiKey], encoding: URLEncoding.queryString)
         case .detail:
-            return .requestParameters(parameters: ["api_key": NetworkManager.MovieAPIKey], encoding: URLEncoding.queryString)
+            return .requestParameters(parameters: ["api_key": appConfig.apiKey], encoding: URLEncoding.queryString)
         }
         
     }

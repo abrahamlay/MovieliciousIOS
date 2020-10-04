@@ -25,6 +25,7 @@
 		38FD0AB324FC067C00E957FF /* DateUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FD0AB224FC067C00E957FF /* DateUtils.swift */; };
 		38FD0AB824FC9C5300E957FF /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FD0AB724FC9C5300E957FF /* SearchBar.swift */; };
 		E9295029E7027FA5EC3791F4 /* Pods_Movielicious.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A03E5132F68D791DC83EF5D3 /* Pods_Movielicious.framework */; };
+		FA3F5BF12529F4A3002A6D15 /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3F5BF02529F4A3002A6D15 /* AppConfiguration.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		44A136E02DB05CB988A61FC3 /* Pods-Movielicious.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Movielicious.debug.xcconfig"; path = "Target Support Files/Pods-Movielicious/Pods-Movielicious.debug.xcconfig"; sourceTree = "<group>"; };
 		A03E5132F68D791DC83EF5D3 /* Pods_Movielicious.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Movielicious.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E91184CC0CA4BF5864A2076F /* Pods-Movielicious.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Movielicious.release.xcconfig"; path = "Target Support Files/Pods-Movielicious/Pods-Movielicious.release.xcconfig"; sourceTree = "<group>"; };
+		FA3F5BF02529F4A3002A6D15 /* AppConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfiguration.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 		38AE56DE24BB049100869DB8 /* Movielicious */ = {
 			isa = PBXGroup;
 			children = (
+				FA3F5BEF2529F473002A6D15 /* New Group */,
 				38FD0AB424FC0C5D00E957FF /* widgets */,
 				38FD0AB124FC066F00E957FF /* utils */,
 				38FD0AA524FBD36800E957FF /* domain */,
@@ -119,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				38AE56DF24BB049100869DB8 /* AppDelegate.swift */,
+				FA3F5BF02529F4A3002A6D15 /* AppConfiguration.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -203,6 +207,13 @@
 				A03E5132F68D791DC83EF5D3 /* Pods_Movielicious.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FA3F5BEF2529F473002A6D15 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 		FA429A732528326600857D2C /* StubbedResponses */ = {
@@ -333,6 +344,7 @@
 				38FD0AB324FC067C00E957FF /* DateUtils.swift in Sources */,
 				38DC336E24FCCB530066D113 /* DetailMovieView.swift in Sources */,
 				38FD0AA424FBCDEA00E957FF /* Movie.swift in Sources */,
+				FA3F5BF12529F4A3002A6D15 /* AppConfiguration.swift in Sources */,
 				38FD0A9D24FB940400E957FF /* HomeView.swift in Sources */,
 				38FD0AAA24FBD4FB00E957FF /* NetworkManager.swift in Sources */,
 				38AE56E224BB049100869DB8 /* SceneDelegate.swift in Sources */,
@@ -370,6 +382,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				API_BASE_URL_PROD = "https://api.themoviedb.org/";
+				API_BASE_URL_QA = "https://qa.themoviedb.org/";
+				API_BASE_URL_STAGING = "https://staging.themoviedb.org/";
+				API_KEY = e1364e3bc8f9d46c4a09586973081f96;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -430,6 +446,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				API_BASE_URL_PROD = "https://api.themoviedb.org/";
+				API_BASE_URL_QA = "https://qa.themoviedb.org/";
+				API_BASE_URL_STAGING = "https://staging.themoviedb.org/";
+				API_KEY = e1364e3bc8f9d46c4a09586973081f96;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
